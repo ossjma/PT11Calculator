@@ -8,13 +8,13 @@ document.getElementById("torqueInput").addEventListener("keyup", function(event)
 function calculateInterpolation() {
   // Check the current date
   const currentDate = new Date();
-  const cutoffDate = new Date('2024-04-19');
+  const cutoffDate = new Date('2024-01-09');
 
   // Check if the current date is beyond the cutoff date
   if (currentDate > cutoffDate) {
     document.getElementById("result").innerText = 'Interpolated value (in PSI):';
     document.getElementById("roundedResult").innerText = 'Rounded Off Interpolated value (in PSI):';
-    document.getElementById("error").innerText = 'Error: Data entry not allowed after 19 April 2024';
+    document.getElementById("error").innerText = 'Error: Data entry not allowed after 09 January 2024';
     document.getElementById("torqueValue").innerText = 'Torque value (in Nm): ';
     return;
   }
